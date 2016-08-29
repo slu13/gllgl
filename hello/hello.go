@@ -4,8 +4,8 @@ package main
 import (
 	"fmt"
 //	"math/rand"
-	"github.com/user/stringutil"
-	"github.com/user/myutil"
+	"github.com/slu13/stringutil"
+	"github.com/slu13/myutil"
 )
 
 // Alternative way of importing packages
