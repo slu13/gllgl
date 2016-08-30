@@ -55,5 +55,7 @@ func main() {
 	pointers()
 	structs()
 	arrays()
+	playRange()
+	maps()
 
 }

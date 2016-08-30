@@ -57,6 +57,9 @@ func arrays() {
 	sd3 := a2[0:]
 	sd4 := a2[0:5]
 	fmt.Println(sd1, sd2, sd3, sd4)
+	fmt.Println("testing array slice cap")
+	printSlice(a2[:])
+	printSlice(a2[2:3])
 
 	// Slice's length and capacity
 	s := []int{1,2,3,4,5}
@@ -78,9 +81,54 @@ func arrays() {
 	// The zero value of a slice is nil. A nil slice has a length and capacity of 0 and has no underlying array.
 	var ns []int
 	printSlice(ns)
+
+
+	// Create Slice with make
+	ms1 := make([]int, 5) // len 5, cap 5
+	printSlice(ms1)
+
+	ms2 := make([]int, 3, 10) // len 3, cap 10
+	printSlice(ms2)
+
+
+	// Slices of Slices
+	ss1 := [][]int {
+		[]int{1, 2, 3},
+		[]int{4, 5, 6},
+		[]int{7, 8, 9},
+	}
+
+	printSliceOfSlices(ss1)
+
+	ss1[0][2] = 0
+	ss1[2][1] = 0
+	printSliceOfSlices(ss1)
+
+	// Append items to slices
+	as1 := make([]int, 3, 5)
+	
+	printSlice(as1)
+	as1 = append(as1, 1, 2)
+	printSlice(as1)
+	as1 = append(as1, 1)
+	printSlice(as1)
+
+	aaaa2 := [5]int{1, 2,3,4,5}
+	as2 := aaaa2[1:3]
+	printSlice(as2)
+	
+	as2 = append(as2, 1, 2, 3, 4, 8, 9)
+	printSlice(as2)
+
 }
 
 
 func printSlice(s []int) {
 	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
+}
+
+func printSliceOfSlices(ss1 [][]int){	
+	for i := 0; i < len(ss1); i++ {
+		fmt.Println(ss1[i])
+	}
 }
