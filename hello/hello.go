@@ -57,5 +57,6 @@ func main() {
 	arrays()
 	playRange()
 	maps()
+	functions()
 
 }
