@@ -58,5 +58,6 @@ func main() {
 	playRange()
 	maps()
 	functions()
+	methods()
 
 }

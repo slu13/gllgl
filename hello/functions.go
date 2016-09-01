@@ -27,6 +27,8 @@ func adder() func(int) int {
 }
 
 
+
+
 func functions() {
 	fmt.Println("---FUnctions")
 
