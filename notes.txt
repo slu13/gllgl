@@ -1,0 +1,26 @@
+
+How to struct Go Code
+https://golang.org/doc/code.html
+https://www.youtube.com/watch?v=XCsL89YtqCs
+
+Go packages
+https://golang.org/pkg/
+
+Go Spec
+https://golang.org/ref/spec#Pointer_types
+
+Go Concurrency Patterns (Slides)
+https://talks.golang.org/2012/concurrency.slide#41
+https://www.youtube.com/watch?v=QDDwwePbDtw
+
+Go github
+https://github.com/golang/go/wiki
+
+The effective Go book
+https://golang.org/doc/effective_go.html#concurrency
+
+
+
+
+
+

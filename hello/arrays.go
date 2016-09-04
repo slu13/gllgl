@@ -120,6 +120,8 @@ func arrays() {
 	as2 = append(as2, 1, 2, 3, 4, 8, 9)
 	printSlice(as2)
 
+	
+
 }
 
 

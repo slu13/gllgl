@@ -60,4 +60,11 @@ func main() {
 	functions()
 	methods()
 
+	valueNPointers()
+	interfaces()
+	stringsya()
+	errors()
+	readers()
+	passingValues()
+	concurrency()
 }
