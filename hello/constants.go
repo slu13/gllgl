@@ -4,6 +4,37 @@ import (
 	"fmt"
 )
 
+
+// iota give the first one 1
+// second one 2
+// and you cannot be Enum1 and Enum2 at the same time
+// Mutually exclusive 'enum'
+const (
+	Enum1 = iota
+	Enum2
+	Enum3
+	Enum4
+)
+
+
+// Enum == 1
+// Enum2 = 10
+// Enum3 = 100
+// Enum4 = 1000
+// So you can have Enum2 and Enum4 at the same time == 1010
+// bitfield (inclusive or) 'enum'
+const (
+	Enum = 1 << iota
+	Enum 2
+	Enum 3
+	Enum 4
+)
+
+const (
+	CombineE1E3 = Enum | Enum3
+	CombineE2E3 = Enum2 | Enum3
+)
+
 func constants(){
 //Constants are declared like variables, but with the const keyword.
 // Constants can be character, string, boolean, or numeric values.
